@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cadastro</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <p>Formulário simples</p>
+  <div>
+    <fieldset>
+   		<form id="formulario" name="contato" method="GET" onSubmit="return validar(this);" action="validarDados.php">
+        
+      
+      <label>Nome: </label><input type="text" name="nome" size="53" placeholder="Digite seu nome" /><br class="clear" />
+      <label>E-mail: </label><input type="text" name="email" size="53" placeholder="Digite seu E-mail" /><br class="clear" />
+      <label>cpf: </label><input type="text" name="CPF" size="50" placeholder="Digite seu CPF" /><br class="clear" />
+      <br />
+      <div>
+        <label for="telefone">Telefone: </label>
+        <input type="text" name="telefone" id="telefone" size="50" placeholder="Digite um número de telefone" maxlength="15"/><br class="clear"/>
+      </div>
+      <div>
+        <input type="Submit" name="Enviar">
+      </div>
+      </form>
+    </fieldset>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
